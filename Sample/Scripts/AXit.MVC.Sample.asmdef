@@ -1,0 +1,16 @@
+{
+    "name": "AXit.MVC.Sample",
+    "rootNamespace": "AXitUnityTemplate.MVC",
+    "references": [
+        "GUID:905c8aad6ceea8c4ca53db717692c444"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

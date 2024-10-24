@@ -1,0 +1,18 @@
+{
+  "name": "com.axit.mvc",
+  "version": "1.0.0",
+  "displayName": "AXit MVC",
+  "description": "A Unity MVC template with a base implementation for models, views, and controllers.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://github.com/ngocphat03/AXitMVC/blob/release/CHANGELOG.md",
+  "licensesUrl": "https://github.com/ngocphat03/AXitMVC/blob/release/LICENSE.md",
+  "dependencies": {},
+ "keywords": [],
+  "author": {
+    "name": "AXit",
+    "email": "ngonngocphat@gmail.com",
+    "url": "https://github.com/ngocphat03/AXitMVC"
+  }
+}
