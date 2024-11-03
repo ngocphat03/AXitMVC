@@ -42,7 +42,7 @@ using AXitUnityTemplate.MVC.Interface;
 
 public class PlayerModel : IModel
 {
-    public int Score { get; set; }
+    public int    Score      { get; set; }
     public string PlayerName { get; set; }
 }
 ```
@@ -60,7 +60,7 @@ public class PlayerController : IController<PlayerModel>
 
     public void UpdateScore(int newScore)
     {
-        Model.Score = newScore;
+        this.Model.Score = newScore;
         // Additional logic to notify the View about the updated score
     }
 }
@@ -71,6 +71,7 @@ public class PlayerController : IController<PlayerModel>
 Then, create a View class that inherits from `BaseView<TModel, TController>`. This View class will handle user interactions and communicate with the Controller.
 
 ```csharp
+using UnityEngine;
 using AXitUnityTemplate.MVC.Base;
 
 public class PlayerView : BaseView<PlayerModel, PlayerController>
@@ -83,8 +84,8 @@ public class PlayerView : BaseView<PlayerModel, PlayerController>
 
     public void OnScoreButtonClicked()
     {
-        Controller.UpdateScore(Model.Score + 1);
-        Debug.Log($"Score updated to: {Model.Score}");
+        this.Controller.UpdateScore(this.Model.Score + 1);
+        Debug.Log($"Score updated to: {this.Model.Score}");
     }
 }
 ```
