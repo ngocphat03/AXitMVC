@@ -13,9 +13,13 @@ AXitMVC is a library designed to support the MVC (Model-View-Controller) pattern
 
 AXitMVC facilitates MVC implementation in Unity with an approach that optimizes for MonoBehaviour. Rather than combining data, logic, and UI in a single class, this library helps divide them into distinct components based on the MVC model, promoting code readability and maintainability.
 
-<p align="center">
-  <img src="Document/Images/MVC_Flow.png" alt="MVC Flow" />
-</p>
+```mermaid
+flowchart TD
+    A((User)) --> B[View]
+    B -->|Notify| D[Controller]
+    D -->|Update| C[Model]
+    B -->|Get data| C
+```
 
 ## Model
 
